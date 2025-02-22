@@ -1,7 +1,7 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-// ...existing code...
 
 module.exports = {
+	aliases: ['up', 'ut'],
 	data: new SlashCommandBuilder()
 		.setName('uptime')
 		.setDescription('Get the uptime of the bot'),
