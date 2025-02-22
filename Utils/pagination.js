@@ -1,4 +1,4 @@
-const createPagination = async (interaction, pages, timeout = 60000) => {
+const createPagination = async function(interaction, pages, timeout = 60000) {
     let currentPage = 0;
     
     // Defer the reply first
