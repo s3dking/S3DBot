@@ -129,6 +129,7 @@ for (const [path, cache] of Object.entries(COMPONENT_FOLDERS)) {
 	ComponentLoader(path, cache);
 	Log.debug(`Loaded ${cache.size} ${path.split('/')[1]}`);
 }
+require('./Utils/SqliteLoader')(client)
 
 // This will only check intents loaded by the event loader
 // If they are defined below this point they will not be checked

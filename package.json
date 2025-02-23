@@ -1,8 +1,10 @@
 {
 	"dependencies": {
-		"@s3dking/randomjoke": "^1.2.3",
+		"@s3dking/randomjoke": "^2.0.0",
+		"better-sqlite3": "^11.8.1",
 		"canvas": "^3.1.0",
-		"discord.js": "14.16"
+		"discord.js": "14.16",
+		"djs-helpers": "^1.4.3"
 	},
 	"scripts": {
 		"start": "node index.js"

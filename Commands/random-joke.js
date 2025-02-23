@@ -12,6 +12,8 @@ module.exports = {
 				.addChoices(
 					{ name: 'Dad Joke', value: 'dad' },
 					{ name: 'Dark Humour Joke', value: 'dark' },
+					{ name: 'Programming Joke', value: 'programming' },
+					{ name: 'Pun Joke', value: 'pun' },
 				)
 			),
 	execute: async function(interaction, client) {
