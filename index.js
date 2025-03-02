@@ -36,18 +36,14 @@ const RegisterCommands = require('./Utils/RegisterCommands');
 const FileWatch = require('./Utils/FileWatcher');
 const CheckIntents = require('./Utils/CheckIntents');
 
-const { Client } = require('discord.js');
+const { Client, GatewayIntentBits } = require('discord.js');
 const ReadFolder = require('./Utils/ReadFolder');
 const Debounce = require('./Utils/Debounce');
 
 require('./Utils/ProcessHandler');
 
 const client = new Client({
-	intents: [
-		'MessageContent',
-		'GuildMessages',
-		'DirectMessages'
-	]
+	intents: Object.keys(GatewayIntentBits)
 });
 
 client.config = config;

@@ -9,7 +9,7 @@ module.exports = {
 		.addUserOption(option => option.setName('user').setDescription('The user').setRequired(false)),
 	execute: async function(interaction, client) {
 		try {
-			await interaction.deferReply();
+			await interaction.deferReply().catch((err) => console.error(err));
 			
 			const user = interaction.options.getUser('user') || interaction.user;
 			const member = await interaction.guild.members.fetch(user.id).catch(() => null);

@@ -4,10 +4,12 @@
 		"better-sqlite3": "^11.8.1",
 		"canvas": "^3.1.0",
 		"discord.js": "14.16",
-		"djs-helpers": "^1.4.3"
+		"djs-helpers": "^1.4.3",
+		"simple-equations": "^1.0.0"
 	},
 	"scripts": {
-		"start": "node index.js"
+		"start": "node index.js",
+		"resetdb": "node Utils/index.js"
 	},
 	"devDependencies": {
 		"@types/node": "^22.13.1"
